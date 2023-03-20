@@ -1,4 +1,4 @@
-# Search node_modules
+# Search node_modules plus
 
 ![](https://raw.githubusercontent.com/duanlvxin/vscode-search-node-modules-plus/master/img/demo.gif)
 
@@ -22,7 +22,7 @@ Chances are you have the `node_modules` folder excluded from the built-in search
 
 ## Links
 
-* Visual Studio Marketplace: [https://marketplace.visualstudio.com/items?itemName=jasonnutter.search-node-modules](https://marketplace.visualstudio.com/items?itemName=jasonnutter.search-node-modules)
+* Visual Studio Marketplace: [https://marketplace.visualstudio.com/items?itemName=duanlvxin.search-node-modules-plus](https://marketplace.visualstudio.com/items?itemName=duanlvxin.search-node-modules-plus)
 * Repo: [https://github.com/duanlvxin/vscode-search-node-modules-plus](https://github.com/duanlvxin/vscode-search-node-modules-plus)
 * Known Issues: [https://github.com/duanlvxin/vscode-search-node-modules-plus/issues](https://github.com/duanlvxin/vscode-search-node-modules-plus/issues)
 * Change Log: [https://github.com/duanlvxin/vscode-search-node-modules-plus/blob/master/CHANGELOG.md](https://github.com/duanlvxin/vscode-search-node-modules-plus/blob/master/CHANGELOG.md)
