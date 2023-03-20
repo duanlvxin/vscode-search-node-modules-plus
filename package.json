@@ -1,0 +1,83 @@
+{
+    "name": "search-node-modules-plus",
+    "displayName": "Search node_modules plus",
+    "description": "Quickly search the node_modules folder.",
+    "license": "MIT",
+    "version": "1.0.0",
+    "publisher": "duanlvxin",
+    "engines": {
+        "vscode": "^1.5.0"
+    },
+    "categories": [
+        "Other"
+    ],
+    "activationEvents": [
+        "onCommand:extension.search"
+    ],
+    "main": "./extension",
+    "contributes": {
+        "commands": [
+            {
+                "command": "extension.search",
+                "title": "Search node_modules plus"
+            }
+        ],
+        "keybindings": [
+            {
+                "command": "extension.search",
+                "key": "ctrl+k ctrl+m",
+                "mac": "cmd+k cmd+m",
+                "when": "!terminalFocus"
+            }
+        ],
+        "configuration": {
+            "title": "Search node_modules plus",
+            "properties": {
+                "search-node-modules-plus.useLastFolder": {
+                    "type": "boolean",
+                    "default": false,
+                    "description": "Default to folder of last opened file when searching."
+                },
+                "search-node-modules-plus.path": {
+                    "type": "string",
+                    "default": "node_modules",
+                    "description": "Relative path to node_modules folder."
+                },
+                "search-node-modules-plus.searchParentModules": {
+                    "type": "boolean",
+                    "default": true,
+                    "description": "Include modules from parent folders in search results."
+                }
+            }
+        }
+    },
+    "scripts": {
+        "lint": "eslint ."
+    },
+    "devDependencies": {
+        "@jasonnutter/eslint-config": "^1.0.1",
+        "@types/node": "^6.0.40",
+        "babel-eslint": "^7.1.1",
+        "eslint": "^3.12.2",
+        "eslint-config-airbnb": "^13.0.0",
+        "eslint-plugin-import": "^2.2.0",
+        "eslint-plugin-jsx-a11y": "^2.2.3",
+        "eslint-plugin-mocha": "^4.8.0",
+        "eslint-plugin-react": "^6.8.0",
+        "pre-commit": "^1.2.2",
+        "typescript": "^2.0.3",
+        "vscode": "^1.1.10"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/duanlvxin/search-node-modules-plus"
+    },
+    "icon": "img/npm-logo.png",
+    "pre-commit": [
+        "lint"
+    ],
+    "dependencies": {
+        "glob": "^7.1.3",
+        "load-json-file": "^6.0.0"
+    }
+}
