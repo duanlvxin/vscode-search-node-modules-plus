@@ -12,7 +12,7 @@ var lastWorkspaceRoot = '';
 const nodeModules = 'node_modules';
 
 exports.activate = context => {
-    const searchNodeModules = vscode.commands.registerCommand('extension.search', () => {
+    const searchNodeModules = vscode.commands.registerCommand('extension.searchplus', () => {
         const preferences = vscode.workspace.getConfiguration('search-node-modules-plus');
 
         const useLastFolder = preferences.get('useLastFolder', false);
@@ -73,8 +73,8 @@ exports.activate = context => {
                         if (stats.isDirectory() && fs.existsSync(path.join(fileFullPath, 'package.json'))) {
                             quickPickItem.buttons = [ {
                                 iconPath: {
-                                    'light': 'resource/light/open-package.svg',
-                                    'dark': 'resource/dark/open-package.svg'
+                                    'light': vscode.Uri.file(context.asAbsolutePath('resource/light/open-package.svg')),
+                                    'dark': vscode.Uri.file(context.asAbsolutePath('resource/dark/open-package.svg'))
                                 },
                                 tooltip: 'open package'
                             } ];

@@ -12,19 +12,19 @@
         "Other"
     ],
     "activationEvents": [
-        "onCommand:extension.search"
+        "onCommand:extension.searchplus"
     ],
     "main": "./extension",
     "contributes": {
         "commands": [
             {
-                "command": "extension.search",
+                "command": "extension.searchplus",
                 "title": "Search node_modules plus"
             }
         ],
         "keybindings": [
             {
-                "command": "extension.search",
+                "command": "extension.searchplus",
                 "key": "ctrl+k ctrl+m",
                 "mac": "cmd+k cmd+m",
                 "when": "!terminalFocus"
